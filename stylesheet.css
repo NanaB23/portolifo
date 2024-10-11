@@ -146,7 +146,7 @@ body {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-/* Body and Layout */
+
 .about-me-body {
     font-family: 'Poppins', sans-serif;  /* Modern, sleek font */
     background-color: #000; /* Black background for sleekness */
@@ -154,21 +154,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Ensures full screen coverage */
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    flex-direction: column; /* Stack content vertically */
 }
 
-/*
 /* Hero Section */
 .about-me-hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 65px;
+    padding: 0 30px; /* Padding for mobile devices */
+    width: 100%; /* Full width for scaling */
 }
 
 .about-me-container {
@@ -178,14 +179,14 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
     animation: slideUp 1.5s ease-in-out;
     max-width: 800px;
-    width: 100%;
-    margin-top: 400px;
+    width: 90%; /* Ensure width scales down on smaller screens */
+    margin-top: 20px; /* Reduced for better view on smaller devices */
     text-align: center;
 }
 
 /* Profile Image Styling */
 .about-me-image-wrapper {
-    margin: 50px auto;
+    margin: 20px auto;
     width: 250px;
     height: 250px;
     position: relative;
@@ -291,11 +292,12 @@ body {
 @media screen and (max-width: 768px) {
     .about-me-container {
         padding: 20px;
+        margin-top: 40px;
     }
 
     .about-me-profile-image {
         width: 180px;
-        height: 250px;
+        height: 180px;
     }
 
     .about-me-name {
@@ -310,7 +312,14 @@ body {
         font-size: 14px;
         padding: 8px 16px;
     }
+
+    .about-me-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
 }
+
+
 /* Body Styling */
 .contact-page-body {
     font-family: 'Poppins', sans-serif;
