@@ -1,0 +1,188 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(64, 224, 208, 0.575);
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Project Overview */
+.project-overview {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem;
+    background-color: #fff;
+}
+
+.project-overview .content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.project-overview img {
+    flex: 1;
+    width: 100%;
+    max-width: 200px;
+}
+
+.project-overview .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: teal;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Features Section */
+.features-section {
+    padding: 4rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    margin: 1rem;
+}
+
+.feature-item i {
+    font-size: 3rem;
+    color: teal;
+}
+
+/* Technologies Section */
+.tech-section {
+    background-color: #fff;
+    padding: 4rem;
+    text-align: center;
+}
+
+.tech-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.tech-list li {
+    background-color: rgba(64, 224, 208, 0.9);
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    color: #fff;
+}
+
+/* Screenshots Section */
+.screenshots-section {
+    padding: 4rem;
+    text-align: center;
+}
+
+.screenshot-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.screenshot-gallery img {
+    max-width: 170px;
+    border-radius: 10px;
+    flex: 1 1 150px;
+}
+
+/* Demo Section */
+.demo-section {
+    margin: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.demo-section .btn {
+    margin: 30px;
+    padding: 0.7rem 1.5rem;
+    background-color: teal;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.demo-section p {
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(64, 224, 208, 0.9);
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .navbar h1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem; /* Or any adjustment you want to apply */
+    }
+}
